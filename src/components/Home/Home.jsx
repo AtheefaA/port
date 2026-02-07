@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import CV from "../../assets/Atheefa final res.pdf";
-import Profile from "../../assets/Profile.jpeg";
+import Profile from "../../assets/pgit add .rofile.jpeg";
 
 const Home = () => {
   return (
