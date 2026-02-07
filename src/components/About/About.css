@@ -1,0 +1,179 @@
+.about {
+  padding: 80px 10%;
+  background: #f8f9fa;
+  scroll-margin-top: 80px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* === IMAGE === */
+.about-image {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.about-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+.about-image img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* === TEXT === */
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  animation: slideInRight 1s ease forwards;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+  position: relative;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+/* === BUTTON STYLE === */
+.about-button {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #ff4b5c;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.about-button:hover {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 75, 92, 0.4);
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* === RESPONSIVE DESIGN === */
+
+/* 📱 Tablets & Mobile */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 8%;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-image img {
+    width: 220px;
+  }
+}
+
+/* 📱 Small Mobile Devices */
+@media (max-width: 480px) {
+  .about {
+    padding: 50px 5%;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-image img {
+    width: 180px;
+  }
+}

@@ -1,0 +1,183 @@
+/* === NAVBAR BASE === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #1e1e2f, #282846);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: padding 0.3s ease;
+}
+
+/* === LOGO === */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff4b5c;
+  white-space: nowrap;
+}
+
+/* === NAV LINKS === */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff4b5c;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ff4b5c;
+}
+
+/* === BUTTON === */
+.btn {
+  padding: 8px 18px;
+  background: #ff4b5c;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(255, 75, 92, 0.5);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #00c6ff, #7b2ff7);
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(123, 47, 247, 0.7);
+}
+
+/* === HAMBURGER ICON === */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: #ff4b5c;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* ===================== */
+/* === RESPONSIVE === */
+/* ===================== */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Hide desktop menu */
+  .nav-links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(160deg, #1e1e2f, #2e2e4d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+
+  /* 🔥 Hide fully */
+  transform: translateX(100%);
+  transition: transform 0.45s ease-in-out;
+
+  z-index: 1000;
+}
+
+  /* Show menu */
+  .nav-links.active {
+  transform: translateX(0);
+}
+
+
+  .nav-links a {
+    font-size: 1.35rem;
+  }
+
+  /* Hide desktop Hire button */
+  .btn {
+    display: none;
+  }
+
+  /* Mobile Hire Me Button */
+  .hire-me-mobile {
+    margin-top: 30px;
+    padding: 12px 28px;
+    background: #ff4b5c;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 12px rgba(255, 75, 92, 0.6);
+    transition: all 0.3s ease;
+  }
+
+  .hire-me-mobile:hover {
+    background: linear-gradient(135deg, #00c6ff, #7b2ff7);
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(123, 47, 247, 0.8);
+  }
+}
+
+/* === SMALL DEVICES === */
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .logo-img {
+    height: 34px;
+    width: 34px;
+  }
+}

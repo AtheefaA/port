@@ -1,0 +1,166 @@
+/* ===== PAGE ===== */
+.category-page {
+  padding: 80px 20px;
+  background: #fdfaf7;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle animated background glow */
+.category-page::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,75,92,0.08), transparent);
+  top: -100px;
+  left: -100px;
+  animation: moveGlow 8s infinite alternate ease-in-out;
+}
+
+@keyframes moveGlow {
+  from { transform: translate(0,0); }
+  to { transform: translate(80px,50px); }
+}
+
+/* ===== HEADING ===== */
+.category-page h2 {
+  font-size: 2.4rem;
+  color: #ff4b5c;
+  margin-bottom: 10px;
+}
+
+/* ===== INTRO TEXT ===== */
+.category-intro {
+  max-width: 750px;
+  margin: auto;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* ===== GRID ===== */
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ===== CARD ===== */
+.category-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+
+  /* entry animation */
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* gradient overlay hover */
+.category-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,75,92,0.08));
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.category-card:hover::before {
+  opacity: 1;
+}
+
+/* floating hover */
+.category-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+}
+
+/* ===== PROJECT IMAGE ===== */
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover .project-image {
+  transform: scale(1.06);
+}
+
+/* ===== TITLE ===== */
+.category-card h3 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* ===== DESCRIPTION ===== */
+.category-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* ===== BUTTON ===== */
+.github-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff4b5c;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* button glow animation */
+.github-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3));
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.github-btn:hover::after {
+  opacity: 1;
+}
+
+.github-btn:hover {
+  background: #e84352;
+  transform: translateY(-2px);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .category-page h2 {
+    font-size: 2rem;
+  }
+
+  .category-intro {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,327 @@
+/* ================= EXPERIENCE SECTION ================= */
+
+.experience {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  scroll-margin-top: 80px;
+
+  /* Animation */
+  animation: sectionFade 0.9s ease forwards;
+}
+
+/* ===== HEADER ===== */
+.experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: bold;
+}
+
+.experience-summary {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 50px auto;
+  color: #555;
+}
+
+/* ===== EXPERIENCE CARDS ===== */
+.experience-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ===== CARD ===== */
+.exp-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 22px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Animation */
+  animation: cardFadeUp 0.7s ease both;
+}
+
+.exp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== ICON ===== */
+.exp-icon {
+  font-size: 2rem;
+  color: #ff4b5c;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.exp-card:hover .exp-icon {
+  transform: scale(1.12);
+}
+
+/* ===== CARD TEXT ===== */
+.exp-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #222;
+  font-weight: 600;
+}
+
+.exp-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ================= ROLE ACCORDION ================= */
+
+.role-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Animation */
+  animation: cardFadeUp 0.7s ease both;
+}
+
+.role-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== ROLE HEADER ===== */
+.role-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 25px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.role-icon {
+  font-size: 2rem;
+  color: #ff4b5c;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.role-header:hover .role-icon {
+  transform: scale(1.12);
+}
+
+.role-header h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.role-short {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== DROPDOWN ARROW ===== */
+.arrow {
+  margin-left: auto;
+  font-size: 1.2rem;
+  color: #555;
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.role-header:hover .arrow {
+  transform: translateY(2px);
+}
+
+/* ===== EXPANDED CONTENT ===== */
+.role-content {
+  border-top: 1px solid #eee;
+  padding: 20px 30px 25px;
+  text-align: left;
+
+  /* Animation */
+  animation: accordionOpen 0.4s ease;
+}
+
+/* ===== EXPERIENCE DETAILS ===== */
+.exp-item h4 {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.exp-item span {
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.exp-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.exp-item ul {
+  padding-left: 18px;
+  margin-bottom: 12px;
+}
+
+.exp-item ul li {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes sectionFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes accordionOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .experience {
+    padding: 70px 40px;
+  }
+
+  .experience h2 {
+    font-size: 2.2rem;
+  }
+
+  .experience-summary {
+    font-size: 1rem;
+    max-width: 650px;
+  }
+
+  .exp-card h3,
+  .role-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .exp-icon,
+  .role-icon {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .experience {
+    padding: 60px 20px;
+  }
+
+  .experience h2 {
+    font-size: 2rem;
+  }
+
+  .experience-summary {
+    font-size: 0.95rem;
+  }
+
+  .experience-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .exp-card {
+    padding: 22px;
+  }
+
+  .role-header {
+    padding: 20px;
+  }
+
+  .role-content {
+    padding: 18px 20px;
+  }
+
+  .exp-icon,
+  .role-icon {
+    font-size: 1.6rem;
+  }
+
+  .exp-card h3,
+  .role-header h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small Mobiles */
+@media (max-width: 480px) {
+  .experience {
+    padding: 50px 15px;
+  }
+
+  .experience h2 {
+    font-size: 1.8rem;
+  }
+
+  .experience-summary {
+    font-size: 0.9rem;
+  }
+
+  .exp-card p,
+  .exp-item p,
+  .exp-item ul li {
+    font-size: 0.9rem;
+  }
+
+  .arrow {
+    font-size: 1rem;
+  }
+}
