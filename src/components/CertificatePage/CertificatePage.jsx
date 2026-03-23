@@ -11,7 +11,7 @@ import frontend4 from "../../assets/frontend4.png";
 import data1 from "../../assets/Data1.png";
 import microsoftDA from "../../assets/data Analysts microsoft.jpeg";
 import jobSim1 from "../../assets/Data Analytics Job Simulation (1).png";
-import jobSimDeloitte from "../../assets/Data Analytics Job Simulation Deloitte.png";
+import jobSimDeloitte from "../../assets/Data Analytics Job Simulation Deloitte.jpeg";
 import genAI from "../../assets/GenAI Powered Data Analytics Job Simulation (1).png";
 
 import java1 from "../../assets/java1.png";
