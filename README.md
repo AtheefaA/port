@@ -1,7 +1,7 @@
 # 💼 Personal Portfolio Website
 
 🚀 **Live Demo:**
-👉 [https://your-netlify-link.netlify.app](https://shafaportfolio.netlify.app)
+👉 [https://shafaportfolio.netlify.app](https://shafaportfolio.netlify.app)
 
 ---
 
@@ -59,7 +59,7 @@ Portfolio/
 
 ### 1️⃣ Clone the Repository
 
-git clone [https://github.com/your-username/portfolio.git](https://github.com/AtheefaA/port.git)
+git clone [https://github.com/AtheefaA/port.git](https://github.com/AtheefaA/port.git)
 cd portfolio
 
 ---
@@ -125,5 +125,3 @@ Thanks to all the resources and inspirations that helped in building this portfo
 💙 If you like this project, give it a ⭐ on GitHub!
 
 ---
-
-Just tell me 👍
