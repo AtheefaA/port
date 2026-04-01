@@ -1,16 +1,129 @@
-# React + Vite
+# 💼 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Live Demo:**
+👉 [https://your-netlify-link.netlify.app](https://shafaportfolio.netlify.app)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Project Overview
 
-## React Compiler
+This is a **modern personal portfolio website** built using **React.js and CSS** to showcase my skills, projects, and achievements.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The portfolio is designed with a clean UI/UX, smooth navigation, and responsive layout to provide a professional online presence.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+* 🧑‍💻 About Me Section
+* 🛠️ Skills Showcase
+* 📂 Projects Portfolio
+* 📄 Resume Download Option
+* 📞 Contact Section
+* 🌙 Light/Dark Mode (optional)
+* 📱 Fully Responsive Design
+* 🎨 Smooth Animations & Transitions
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* CSS (Custom Styling)
+
+### Deployment
+
+* Netlify
+
+---
+
+## 📁 Project Structure
+
+Portfolio/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── App.jsx
+│
+├── public/
+├── package.json
+└── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+git clone [https://github.com/your-username/portfolio.git](https://github.com/AtheefaA/port.git)
+cd portfolio
+
+---
+
+### 2️⃣ Install Dependencies
+
+npm install
+
+---
+
+### 3️⃣ Run the Project
+
+npm run dev
+
+---
+
+## 🌐 Usage
+
+* Open browser and go to: [http://localhost:5173](http://localhost:5173)
+* Explore About, Projects, and Contact sections
+* View projects and interact with UI
+
+---
+
+## 📌 Future Enhancements
+
+* 🌐 Multi-language Support
+* 📊 Blog Section
+* 🔗 Social Media Integration
+* 🎯 Advanced Animations
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push and create a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👩‍💻 Author
+
+**Sajarath Atheefa A**
+
+---
+
+## 💡 Acknowledgement
+
+Thanks to all the resources and inspirations that helped in building this portfolio.
+
+---
+
+💙 If you like this project, give it a ⭐ on GitHub!
+
+---
+
+Just tell me 👍
