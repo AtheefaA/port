@@ -20,7 +20,6 @@ The portfolio is designed with a clean UI/UX, smooth navigation, and responsive 
 * 📂 Projects Portfolio
 * 📄 Resume Download Option
 * 📞 Contact Section
-* 🌙 Light/Dark Mode (optional)
 * 📱 Fully Responsive Design
 * 🎨 Smooth Animations & Transitions
 
