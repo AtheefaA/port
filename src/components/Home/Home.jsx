@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import CV from "../../assets/Atheefa Data Analyst resume (1).pdf";
+import CV from "../../assets/Data Analytics resume.pdf";
 import Profile from "../../assets/profile.jpeg";
 
 
